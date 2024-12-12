@@ -31,11 +31,10 @@ def games(request):
 
 def cart(request):
     pagename = 'Корзина'
-    menu = menu_
     content = 'Извините, ваша корзина пуста'
     context = {
         'pagename': pagename,
-        'menu': menu,
+        'menu': menu_,
         'content': content
     }
     return render(request, 'third_task/cart.html', context)
